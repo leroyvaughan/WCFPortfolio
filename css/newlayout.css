@@ -1,0 +1,198 @@
+
+body{
+	text-align:center;
+	font-family:Arial, Helvetica, sans-serif;
+	margin:0px;
+	padding:0px;
+	padding-bottom:50px;
+	font-size:11pt;
+	background-color:#fff;
+}
+.p{
+	margin:10px 0px;
+	text-align:left;
+	z-index:2;
+}
+#tblMain{
+	border:1px solid red;
+}
+.fadeIn{
+	filter:alpha(opacity=100);
+	-moz-opacity:1.0;
+}
+.fadeOut{
+	filter:alpha(opacity=85);
+	-moz-opacity:.85;
+}
+
+.float_left{ float:left; }
+
+
+.hdr{ position:relative; height:126px; }
+.hdrGrafik{
+	width:688px;
+	height:126px;
+	background:url('../images/hdr.jpg') center top no-repeat;
+	z-index:3;
+	position:absolute;
+	left:21px;
+	cursor:pointer;
+}
+.leftHdr, .rtHdr{
+	position:absolute;
+	top:0px;
+	height:126px;
+}
+.leftHdr{
+	background:left top repeat-x  url(../images/leftHdr.jpg);
+	left:0px;
+	z-index:1;
+	width:100px;
+}
+.rtHdr{
+	background:left top repeat-x url(../images/rtHdr.jpg);
+	right:0px;
+	z-index:2;
+	width:95%
+}
+
+
+
+div.body{
+	position:relative;
+	width:100%;
+	border-top:4px double #ccc;
+	height:600px;
+	text-align:center;
+	background:left top no-repeat url(../images/back1.gif) #FFFFD4;
+	border-bottom:4px double #ccc;
+	/*
+		cfc75d		bronze
+		cc7735		maroon/brown
+	*/
+}
+
+
+.plug{
+	position:absolute;
+	display:table-cell;
+	height:auto;
+	width:auto;
+	top:25px;
+}
+.plugHdr{
+	padding:3px 0px;
+	font-weight:bold;
+	font-size:10pt;
+	color:#fff;
+	background-color:#555;
+	border-bottom:1px solid gold;
+	height:auto;
+}
+.plugContent{
+	font-size:9pt;
+	text-align:left;
+	/*color:#534741;*/
+	color:#777;
+	margin:10px;
+}
+.plugContent ul{ font-size:8pt; }
+.plug > div{ margin:0px; }
+
+
+
+
+#about, #history, #theCode, #theLatest{
+	position:relative;
+	height:auto;
+	border:1px solid #cc7735;
+	background-color:#FFFFCC;
+}
+#about{ width:255px; }
+#about > div{ width:255px; }
+#about div.plugContent{ width:235px; }
+
+#history{ width:549px; }
+#history > div.plugHdr, #history > div.plugContent{ width:549px; }
+#history > div.plugContent{ width:529px; }
+
+#theCode{ width:255px; }
+#theCode > div{ width:255px; }
+#theCode div.plugContent{ width:235px; }
+#theCode div.plugContent ul{ margin-top:15px; margin-bottom:9px; }
+
+#navMenu{
+	background-color:#ffffcc;
+	border:1px solid #cc7735;
+	box-shadow:3px 4px 3px #999;
+	height:450px;
+	left:10px;
+	position:absolute;
+	top:25px;
+	width:100px;
+}
+#navMenu div.plugHdr{
+	width:100px;
+}
+#plugManShadow{
+	position:absolute;
+	bottom:40px;
+	left:793px;
+	width:158px;
+	height:214px;
+}
+
+
+ul{ margin-top:10px; }
+
+
+
+#iconHolder{
+	margin:auto;
+	height:auto;
+	width:87px;
+}
+.iconPlug{
+	position:relative;
+	width:auto;
+	margin-top:30px;
+	cursor:pointer;
+	height:72px;
+}
+.iconPlug > span, .iconPlug > img{
+	position:absolute;
+	color:#777;
+	font-weight:bold;
+	font-size:10pt;
+}
+.iconPlug > img{ top:0px; left:0px; }
+
+
+
+
+#sandboxItems{
+	position:relative;
+	width:600px;
+	height:auto;
+	text-align:center;
+	border:1px solid #cc7735;
+	background-color:#ffffcc;
+}
+#sandboxItems a{
+	color:#cc7735;
+}
+.plugContent a{
+	color:#777;
+}
+#sandboxItems a:hover, .plugContent a:hover{
+	color:#cc7735;
+	text-decoration:none;
+}
+#sandboxItems dd ul{
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+
+#theLatest{	width:260px; }
+#theLatest .plugContent{ margin:5px; }

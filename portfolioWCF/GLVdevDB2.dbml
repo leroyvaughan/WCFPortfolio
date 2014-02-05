@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="GLVdevDB2" Class="GLVdevDB2DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=GLVdevDB2.db.11705873.hostedresource.com;Initial Catalog=GLVdevDB2;Persist Security Info=True;User ID=GLVdevDB2" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="GLVdevDB2ConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.glvSQL" Member="glvSQLs">
+    <Type Name="glvSQL">
+      <Column Name="Title" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="ImgSource" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="Link" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Category" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="SubCategory" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Company" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Year" Type="System.String" DbType="NVarChar(5)" CanBeNull="true" />
+      <Column Name="ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

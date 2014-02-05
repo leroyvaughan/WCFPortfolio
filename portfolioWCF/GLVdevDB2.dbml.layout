@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="GLVdevDB2">
+  <DataContextMoniker Name="/GLVdevDB2DataContext" />
+  <nestedChildShapes>
+    <classShape Id="4ecab121-0ae0-4490-a89a-dd84fb7b397a" absoluteBounds="2.125, 2.375, 2, 2.5401025390625">
+      <DataClassMoniker Name="/GLVdevDB2DataContext/glvSQL" />
+      <nestedChildShapes>
+        <elementListCompartment Id="841147f8-7afa-40e4-ae11-6aaff532d7a9" absoluteBounds="2.14, 2.835, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

@@ -1,0 +1,61 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Portfolio.master.cs" Inherits="GLVConsulting.PortfolioMaster" %>
+
+<!DOCTYPE html>
+<html xmlns:ng="http://angularjs.org">
+
+<%@ register src="navMenu.ascx" tagname="navMenu" tagprefix="uc" %>
+
+<head runat="server">
+    <title>GLV Consulting</title>
+    <meta content="GLV Consulting provides experienced Web Development." name="description" />
+    <meta content="seattle, web design, asp.net, glv, glvconsulting, web development, leroy vaughan" name="keywords" />
+    <meta charset="utf-8" />
+    
+    <link href="<%= ResolveClientUrl("~/css/newlayout.css") %>" rel="stylesheet" type="text/css" />
+    <link href="/css/portfolio.css" rel="Stylesheet" />
+
+    <script src="/Scripts/jquery-1.7.1.min.js"></script>
+    <script src="/Scripts/modernizr-2.5.3.js"></script>
+    <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script src="/Scripts/angular1.1.5.min.js"></script>
+    <script src="/Scripts/wcfPortfolio_angular.js"></script>
+    <%--<script src="/Scripts/wrongWayToAngularJSONP.js"></script>--%>
+    <script type="text/javascript">
+        function goHome() {
+            document.location.href = "http://www.glvconsulting.com";
+        }
+    </script>
+
+</head>
+<body id="ng-app" ng-app="wcfPortfolio" ng-controller="wcfP_Controller">
+    <form runat="server">
+    <div class="hdr">
+        <div class="leftHdr">&nbsp;</div>
+        <div id="hdrGrafik" class="hdrGrafik" onclick="goHome();">&nbsp;</div>
+        <div class="rtHdr">&nbsp;</div>
+    </div>
+    
+    <div class="body">
+        <div id="portfolioMenu">
+            <div id="portMenuInner">
+                <div class="inline projectLinks">
+                    <a href="#" ng-click="webStuff()">Web Stuff</a> | 
+                    <a href="#" ng-click="flashStuff()">Flash Stuff</a> | 
+                    <a href="#" ng-click="designStuff()">Design Stuff</a>
+                </div>
+            </div>
+        </div>
+        <div id="webStuffDDL" ng-show="showDDL">
+            <label for="ddlSubCategories">Filter by Category: </label>
+            <select ng-model="filterItem" 
+                    ng-options="item.subCat for item in subCategories"
+                    id="ddlSubCategories"></select>
+        </div>
+        <asp:contentplaceholder id="MainContent" runat="server">
+        </asp:contentplaceholder>
+    </div>
+    </form>
+</body>
+</html>

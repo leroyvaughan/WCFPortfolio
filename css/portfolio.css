@@ -1,0 +1,164 @@
+div.body
+{
+    display:table;
+    height:auto;
+    position:relative;
+    width:100%;
+    /*
+        cfc75d		bronze
+        cc7735		maroon/brown
+    */
+}
+div.images a{
+    text-decoration:none;
+    margin-right:5px;
+    border-radius:2px;
+}
+
+.clear{ clear:both; }
+
+.bar{
+    width: 580px;
+    padding: 10px;
+    margin:0 auto;
+    text-align:left;
+}
+        
+
+.cat
+{
+    float:left;
+    margin:21px 75px 50px 0;
+}
+
+.catHdr
+{
+    color:#444;
+    font-weight:bold;
+    font-size:27px;
+    text-shadow:3px 1px 4px #aaa;
+}
+
+
+/*-------------------------
+    List layout
+--------------------------*/
+
+
+ul.list{
+    list-style: none;
+    width: 650px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+ul.list li
+{
+    background-color:#ffffcc;
+    border: 1px solid #cc7735;
+    box-shadow:2px 3px 4px #555;
+    margin-bottom:75px;
+    overflow: hidden;
+    padding:0;
+}
+
+ul.list li img
+{
+    border:1px solid #ccc;
+    height:90%;
+    margin:10px 5% 5%;
+    width:90%;
+}
+        
+#heroImg\.gif img{ width:60%; height:60%; }
+        
+div.topLink
+{
+    background-color:#555;
+    padding:4px 3px;
+    text-align:right;
+}
+div.topLink a
+{
+    color:#fff;
+}
+div.topLink a:hover
+{
+    color:#cc7735;
+    text-decoration:underline;
+}
+
+p.title
+{
+    background-color:#cc7735;
+    color:#fff;
+    font-size:20px;
+    font-style:italic;
+    margin-top:10px;
+    padding:3px 0 3px 10px;
+    box-shadow:-1px 3px 3px #555;
+}
+.desc
+{
+    color:#555;
+    margin:10px 3%;
+}
+        
+button.imgBtn
+{
+    border:none;
+    box-shadow:2px 2px 3px #555;
+    height:32px;
+    padding:0px;
+    width:32px;
+}
+
+
+/*-------------------------
+    Grid layout
+--------------------------*/
+
+
+ul.grid{
+    list-style: none;
+    width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+ul.grid li{
+    float:left;
+    margin-right:10px;
+    padding: 2px;
+}
+
+ul.grid li img{
+    border:none;
+    box-shadow:3px 4px 8px #777;
+    display:block;
+    height:280px;
+    width:280px;
+}
+        
+        
+        
+        
+/* search related elements */
+#portfolioMenu
+{
+    border-bottom:4px double #ccc;
+    margin-bottom:25px;
+    text-align:left;
+}
+#portMenuInner
+{
+    background-color:#555;
+    padding:5px 10px;
+}
+.inline{ display:inline; }
+.projectLinks{ color:#ccc; }
+
+.projectLinks a
+{
+    color:#fff;
+}
